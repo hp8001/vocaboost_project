@@ -1,0 +1,38 @@
+# ── Tài liệu nội bộ ─────────────────────────
+docs/
+
+# ── Flutter / Dart ──────────────────────────
+vocaboost_app/.dart_tool/
+vocaboost_app/build/
+vocaboost_app/.flutter-plugins
+vocaboost_app/.flutter-plugins-dependencies
+vocaboost_app/.packages
+vocaboost_app/pubspec.lock
+
+# ── Android ─────────────────────────────────
+vocaboost_app/android/.gradle/
+vocaboost_app/android/local.properties
+vocaboost_app/android/key.properties
+vocaboost_app/android/app/google-services.json
+
+# ── iOS ─────────────────────────────────────
+vocaboost_app/ios/Pods/
+vocaboost_app/ios/Flutter/Flutter.framework
+vocaboost_app/ios/Flutter/Flutter.podspec
+vocaboost_app/ios/.symlinks/
+vocaboost_app/ios/GoogleService-Info.plist
+
+# ── Firebase / Secrets ──────────────────────
+*.env
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# ── IDE ─────────────────────────────────────
+.idea/
+.vscode/settings.json
+*.iml
+
+# ── OS ──────────────────────────────────────
+.DS_Store
+Thumbs.db
