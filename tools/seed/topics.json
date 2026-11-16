@@ -1,0 +1,82 @@
+[
+  {
+    "id": "family",
+    "nameVi": "Gia đình",
+    "nameEn": "Family",
+    "icon": "👨‍👩‍👧",
+    "order": 1,
+    "isActive": true
+  },
+  {
+    "id": "food_drink",
+    "nameVi": "Ăn uống",
+    "nameEn": "Food & Drink",
+    "icon": "🍜",
+    "order": 2,
+    "isActive": true
+  },
+  {
+    "id": "travel",
+    "nameVi": "Du lịch",
+    "nameEn": "Travel",
+    "icon": "✈️",
+    "order": 3,
+    "isActive": true
+  },
+  {
+    "id": "work",
+    "nameVi": "Công việc",
+    "nameEn": "Work",
+    "icon": "💼",
+    "order": 4,
+    "isActive": true
+  },
+  {
+    "id": "technology",
+    "nameVi": "Công nghệ",
+    "nameEn": "Technology",
+    "icon": "💻",
+    "order": 5,
+    "isActive": true
+  },
+  {
+    "id": "health",
+    "nameVi": "Sức khỏe",
+    "nameEn": "Health",
+    "icon": "🏥",
+    "order": 6,
+    "isActive": true
+  },
+  {
+    "id": "education",
+    "nameVi": "Giáo dục",
+    "nameEn": "Education",
+    "icon": "🎓",
+    "order": 7,
+    "isActive": true
+  },
+  {
+    "id": "nature",
+    "nameVi": "Thiên nhiên",
+    "nameEn": "Nature",
+    "icon": "🌳",
+    "order": 8,
+    "isActive": true
+  },
+  {
+    "id": "sports",
+    "nameVi": "Thể thao",
+    "nameEn": "Sports",
+    "icon": "⚽",
+    "order": 9,
+    "isActive": true
+  },
+  {
+    "id": "shopping",
+    "nameVi": "Mua sắm",
+    "nameEn": "Shopping",
+    "icon": "🛍️",
+    "order": 10,
+    "isActive": true
+  }
+]

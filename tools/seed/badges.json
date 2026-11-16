@@ -1,0 +1,82 @@
+[
+  {
+    "id": "first_word",
+    "nameVi": "Bước đầu tiên",
+    "icon": "🌱",
+    "description": "Học từ vựng đầu tiên",
+    "conditionType": "words_learned",
+    "conditionValue": 1
+  },
+  {
+    "id": "words_10",
+    "nameVi": "Người mới bắt đầu",
+    "icon": "🌿",
+    "description": "Học được 10 từ",
+    "conditionType": "words_learned",
+    "conditionValue": 10
+  },
+  {
+    "id": "words_50",
+    "nameVi": "Đang tiến bộ",
+    "icon": "📘",
+    "description": "Học được 50 từ",
+    "conditionType": "words_learned",
+    "conditionValue": 50
+  },
+  {
+    "id": "words_100",
+    "nameVi": "Bách từ thủ",
+    "icon": "💯",
+    "description": "Học được 100 từ",
+    "conditionType": "words_learned",
+    "conditionValue": 100
+  },
+  {
+    "id": "words_500",
+    "nameVi": "Từ điển sống",
+    "icon": "📚",
+    "description": "Học được 500 từ",
+    "conditionType": "words_learned",
+    "conditionValue": 500
+  },
+  {
+    "id": "streak_3",
+    "nameVi": "3 ngày liên tiếp",
+    "icon": "🔥",
+    "description": "Học liên tiếp 3 ngày",
+    "conditionType": "streak",
+    "conditionValue": 3
+  },
+  {
+    "id": "streak_7",
+    "nameVi": "Tuần lễ chăm chỉ",
+    "icon": "🔥",
+    "description": "Học liên tiếp 7 ngày",
+    "conditionType": "streak",
+    "conditionValue": 7
+  },
+  {
+    "id": "streak_30",
+    "nameVi": "Tháng kiên trì",
+    "icon": "🏆",
+    "description": "Học liên tiếp 30 ngày",
+    "conditionType": "streak",
+    "conditionValue": 30
+  },
+  {
+    "id": "pronunciation_ace",
+    "nameVi": "Phát âm hoàn hảo",
+    "icon": "🎤",
+    "description": "Đạt điểm phát âm 100/100",
+    "conditionType": "pronunciation",
+    "conditionValue": 100
+  },
+  {
+    "id": "topic_complete",
+    "nameVi": "Chuyên gia chủ đề",
+    "icon": "🎯",
+    "description": "Hoàn thành tất cả từ của một chủ đề",
+    "conditionType": "topic_done",
+    "conditionValue": 1
+  }
+]

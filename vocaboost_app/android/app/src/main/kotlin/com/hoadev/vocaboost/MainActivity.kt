@@ -1,4 +1,4 @@
-package com.example.vocaboost_app
+package com.hoadev.vocaboost
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,112 @@
+rules_version = '2';
+
+// VocaBoost — Quy tắc bảo mật Cloud Firestore
+// Cách dùng: Firebase Console > Firestore Database > tab Rules > dán toàn bộ nội dung > Publish.
+// Lưu ý: quy tắc KHÔNG tự lọc dữ liệu. Learner phải truy vấn topics/vocabularies kèm where('isActive' == true).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ───────── Hàm dùng chung ─────────
+    function signedIn() {
+      return request.auth != null;
+    }
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+    function myProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    // Quản trị viên = hồ sơ users/{uid} có role == 'admin'
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && myProfile().get('role', 'learner') == 'admin';
+    }
+    // Người dùng chưa bị khóa (isDisabled không phải true)
+    function isActiveUser() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && myProfile().get('isDisabled', false) != true;
+    }
+
+    // ───────── users/{uid} ─────────
+    match /users/{uid} {
+      // Chủ tài khoản đọc được hồ sơ của mình (kể cả khi bị khóa, để app biết mà đăng xuất). Admin đọc được tất cả.
+      allow read: if isOwner(uid) || isAdmin();
+
+      // Tự tạo hồ sơ khi đăng ký: bắt buộc role = learner, isDisabled = false
+      allow create: if isOwner(uid)
+        && request.resource.data.role == 'learner'
+        && request.resource.data.isDisabled == false
+        && request.resource.data.weeklyXP == 0;
+
+      // Chủ tài khoản được sửa hồ sơ NHƯNG không được đổi role / isDisabled / weeklyXP / weeklyXPResetAt.
+      // (weeklyXP và weeklyXPResetAt do script đồng bộ bảng xếp hạng ghi bằng Admin SDK — QĐ3, 13/11/2026.)
+      // Admin chỉ được đổi đúng một trường: isDisabled (khóa / mở khóa).
+      allow update: if
+        (isOwner(uid) && isActiveUser()
+          && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['role', 'isDisabled', 'weeklyXP', 'weeklyXPResetAt']))
+        || (isAdmin()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['isDisabled']));
+
+      allow delete: if false;
+
+      // Dữ liệu học tập riêng của từng người dùng
+      match /word_progress/{wordId} {
+        allow read, write: if isOwner(uid) && isActiveUser();
+      }
+      // Phiên học: CHỈ TẠO MỚI (không sửa/xóa) và phải có giá trị hợp lý. Script đồng bộ dùng collection này để
+      // tính điểm bảng xếp hạng. xpEarned chỉ gồm XP từ từ vựng của phiên (không gồm thưởng daily goal/streak/chủ đề).
+      match /sessions/{sessionId} {
+        allow read: if isOwner(uid) && isActiveUser();
+        allow create: if isOwner(uid) && isActiveUser()
+          && request.resource.data.keys().hasOnly(['date', 'wordsStudied', 'correctCount', 'incorrectCount',
+                                                   'xpEarned', 'durationSeconds', 'sessionType'])
+          && request.resource.data.date is timestamp
+          && request.resource.data.date <= request.time + duration.value(5, 'm')
+          && request.resource.data.wordsStudied is int
+          && request.resource.data.wordsStudied >= 1 && request.resource.data.wordsStudied <= 100
+          && request.resource.data.correctCount is int
+          && request.resource.data.correctCount >= 0 && request.resource.data.correctCount <= 200
+          && request.resource.data.incorrectCount is int
+          && request.resource.data.incorrectCount >= 0 && request.resource.data.incorrectCount <= 200
+          && request.resource.data.xpEarned is int
+          && request.resource.data.xpEarned >= 0
+          && request.resource.data.xpEarned <= request.resource.data.wordsStudied * 15
+          && request.resource.data.durationSeconds is int
+          && request.resource.data.durationSeconds >= request.resource.data.wordsStudied
+          && request.resource.data.durationSeconds <= 21600
+          && request.resource.data.sessionType in ['learn', 'review', 'pronunciation'];
+        allow update, delete: if false;
+      }
+      match /badges/{badgeId} {
+        allow read, write: if isOwner(uid) && isActiveUser();
+      }
+    }
+
+    // ───────── Nội dung học ─────────
+    match /topics/{topicId} {
+      allow read: if signedIn() && (isAdmin() || resource.data.isActive == true);
+      allow write: if isAdmin();
+    }
+    match /vocabularies/{wordId} {
+      allow read: if signedIn() && (isAdmin() || resource.data.isActive == true);
+      allow write: if isAdmin();
+    }
+    // Định nghĩa huy hiệu: chỉ đọc. Dữ liệu được nạp bằng script seed (Admin SDK bỏ qua quy tắc).
+    match /badges_master/{badgeId} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // ───────── Bảng xếp hạng công khai (Quyết định 2 — 14/10/2026; Quyết định 3 — 13/11/2026, xem plan v33) ─────────
+    // Chỉ chứa thông tin tối thiểu, để Leaderboard không phải đọc hồ sơ users của người khác (tránh lộ email/role).
+    // Ứng dụng CHỈ ĐỌC. Điểm do script tools/leaderboard_sync.py tính từ users/{uid}/sessions rồi ghi bằng Admin SDK
+    // (Admin SDK bỏ qua quy tắc này). Admin (role) chỉ được xóa thủ công khi cần dọn dữ liệu.
+    match /leaderboard/{uid} {
+      allow read: if signedIn();
+      allow create, update: if false;
+      allow delete: if isAdmin();
+    }
+  }
+}

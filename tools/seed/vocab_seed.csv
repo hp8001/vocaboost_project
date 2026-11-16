@@ -1,0 +1,101 @@
+﻿topicId,word,partOfSpeech,cefr_level,ipa,meaning,exampleEn,exampleVi
+family,mother,n,A1,/ˈmʌðər/,mẹ,My mother cooks dinner every evening.,Mẹ tôi nấu bữa tối mỗi tối.
+family,father,n,A1,/ˈfɑːðər/,"bố, cha",His father works in a bank.,Bố của anh ấy làm việc ở một ngân hàng.
+family,brother,n,A1,/ˈbrʌðər/,"anh trai, em trai",I have one older brother.,Tôi có một người anh trai.
+family,sister,n,A1,/ˈsɪstər/,"chị gái, em gái",My sister is a teacher.,Chị gái tôi là giáo viên.
+family,grandmother,n,A1,/ˈɡrænˌmʌðər/,"bà (nội, ngoại)",My grandmother lives in the countryside.,Bà tôi sống ở miền quê.
+family,uncle,n,A1,/ˈʌŋkəl/,"chú, bác, cậu, dượng",My uncle is a farmer.,Chú tôi là một nông dân.
+family,cousin,n,A2,/ˈkʌzən/,anh chị em họ,My cousin visits us every summer.,Em họ tôi đến thăm chúng tôi mỗi mùa hè.
+family,husband,n,A1,/ˈhʌzbənd/,chồng,Her husband is a doctor.,Chồng cô ấy là bác sĩ.
+family,parent,n,A2,/ˈpɛrənt/,cha hoặc mẹ; (số nhiều) bố mẹ,My parents live near the city center.,Bố mẹ tôi sống gần trung tâm thành phố.
+family,relative,n,B1,/ˈrɛlətɪv/,"họ hàng, người thân",We invited all our relatives to the party.,Chúng tôi mời tất cả họ hàng đến bữa tiệc.
+food_drink,breakfast,n,A1,/ˈbrɛkfəst/,bữa sáng,I eat breakfast at seven o'clock.,Tôi ăn sáng lúc bảy giờ.
+food_drink,rice,n,A1,/raɪs/,"cơm, gạo",We eat rice every day.,Chúng tôi ăn cơm mỗi ngày.
+food_drink,vegetable,n,A2,/ˈvɛdʒtəbəl/,rau củ,She buys fresh vegetables at the market.,Cô ấy mua rau củ tươi ở chợ.
+food_drink,fruit,n,A1,/fruːt/,trái cây,Fruit is good for your health.,Trái cây tốt cho sức khỏe của bạn.
+food_drink,chicken,n,A1,/ˈtʃɪkən/,"thịt gà, con gà",We had grilled chicken for lunch.,Chúng tôi ăn gà nướng vào bữa trưa.
+food_drink,water,n,A1,/ˈwɔːtər/,nước,Please drink more water.,Hãy uống nhiều nước hơn.
+food_drink,delicious,adj,A2,/dɪˈlɪʃəs/,ngon,This soup is delicious.,Món súp này rất ngon.
+food_drink,hungry,adj,A1,/ˈhʌŋɡri/,đói,I am hungry. Let's eat.,Tôi đói rồi. Chúng ta ăn thôi.
+food_drink,recipe,n,B1,/ˈrɛsəpi/,công thức nấu ăn,Can you share your recipe with me?,Bạn có thể chia sẻ công thức nấu ăn của bạn với tôi không?
+food_drink,order,v,A2,/ˈɔːrdər/,gọi món; đặt hàng,We ordered two pizzas.,Chúng tôi đã gọi hai chiếc pizza.
+travel,airport,n,A1,/ˈɛrˌpɔːrt/,sân bay,We arrived at the airport early.,Chúng tôi đến sân bay sớm.
+travel,ticket,n,A1,/ˈtɪkɪt/,vé,I bought a train ticket online.,Tôi đã mua vé tàu trực tuyến.
+travel,passport,n,A2,/ˈpæsˌpɔːrt/,hộ chiếu,Don't forget your passport.,Đừng quên hộ chiếu của bạn.
+travel,luggage,n,A2,/ˈlʌɡɪdʒ/,hành lý,Her luggage was very heavy.,Hành lý của cô ấy rất nặng.
+travel,hotel,n,A1,/hoʊˈtɛl/,khách sạn,The hotel is near the beach.,Khách sạn nằm gần bãi biển.
+travel,journey,n,B1,/ˈdʒɜːrni/,chuyến đi dài,The journey took ten hours.,Chuyến đi kéo dài mười tiếng.
+travel,tourist,n,A2,/ˈtʊrɪst/,khách du lịch,Many tourists visit Da Nang every year.,Nhiều khách du lịch đến Đà Nẵng mỗi năm.
+travel,reservation,n,B1,/ˌrɛzərˈveɪʃən/,sự đặt chỗ,I made a reservation for two people.,Tôi đã đặt chỗ cho hai người.
+travel,destination,n,B1,/ˌdɛstəˈneɪʃən/,điểm đến,Bali is a popular destination.,Bali là một điểm đến nổi tiếng.
+travel,map,n,A1,/mæp/,bản đồ,Can you show me the map?,Bạn có thể chỉ cho tôi xem bản đồ không?
+work,job,n,A1,/dʒɑːb/,"công việc, nghề nghiệp",She is looking for a new job.,Cô ấy đang tìm một công việc mới.
+work,office,n,A1,/ˈɔːfɪs/,văn phòng,He works in a small office.,Anh ấy làm việc trong một văn phòng nhỏ.
+work,manager,n,A2,/ˈmænɪdʒər/,quản lý,The manager called a meeting.,Người quản lý đã triệu tập một cuộc họp.
+work,colleague,n,B1,/ˈkɑːliːɡ/,đồng nghiệp,My colleague helped me with the report.,Đồng nghiệp của tôi đã giúp tôi làm báo cáo.
+work,salary,n,A2,/ˈsæləri/,tiền lương,Her salary is paid monthly.,Lương của cô ấy được trả hằng tháng.
+work,meeting,n,A2,/ˈmiːtɪŋ/,cuộc họp,We have a meeting at ten.,Chúng tôi có một cuộc họp lúc mười giờ.
+work,interview,n,B1,/ˈɪntərˌvjuː/,buổi phỏng vấn,I have a job interview tomorrow.,Ngày mai tôi có một buổi phỏng vấn xin việc.
+work,deadline,n,B1,/ˈdɛdˌlaɪn/,hạn chót,The deadline is next Friday.,Hạn chót là thứ Sáu tuần sau.
+work,customer,n,A2,/ˈkʌstəmər/,khách hàng,The customer asked about the price.,Khách hàng đã hỏi về giá.
+work,project,n,B1,/ˈprɑːdʒɛkt/,dự án,Our team is working on a new project.,Nhóm chúng tôi đang thực hiện một dự án mới.
+technology,computer,n,A1,/kəmˈpjuːtər/,máy tính,I use my computer every day.,Tôi dùng máy tính của mình mỗi ngày.
+technology,internet,n,A1,/ˈɪntərˌnɛt/,mạng internet,The internet is slow today.,Hôm nay mạng internet chậm.
+technology,password,n,A2,/ˈpæsˌwɜːrd/,mật khẩu,Please enter your password.,Vui lòng nhập mật khẩu của bạn.
+technology,website,n,A2,/ˈwɛbˌsaɪt/,trang web,I visit this website often.,Tôi thường truy cập trang web này.
+technology,download,v,A2,/ˈdaʊnˌloʊd/,tải xuống,You can download the app for free.,Bạn có thể tải ứng dụng xuống miễn phí.
+technology,screen,n,A2,/skriːn/,màn hình,The screen is too bright.,Màn hình quá sáng.
+technology,battery,n,A2,/ˈbætəri/,pin,My phone battery is low.,Pin điện thoại của tôi sắp hết.
+technology,software,n,B1,/ˈsɔːftˌwɛr/,phần mềm,This software is easy to use.,Phần mềm này dễ sử dụng.
+technology,update,v,B1,/ʌpˈdeɪt/,cập nhật,Please update the app.,Vui lòng cập nhật ứng dụng.
+technology,online,adj,A2,/ˌɑːnˈlaɪn/,trực tuyến,She takes online classes.,Cô ấy học các lớp trực tuyến.
+health,doctor,n,A1,/ˈdɑːktər/,bác sĩ,I need to see a doctor.,Tôi cần đi khám bác sĩ.
+health,medicine,n,A2,/ˈmɛdɪsən/,thuốc,Take this medicine twice a day.,Hãy uống thuốc này hai lần mỗi ngày.
+health,headache,n,A2,/ˈhɛdˌeɪk/,chứng đau đầu,I have a headache.,Tôi bị đau đầu.
+health,fever,n,B1,/ˈfiːvər/,cơn sốt,He has a high fever.,Anh ấy bị sốt cao.
+health,healthy,adj,A2,/ˈhɛlθi/,"khỏe mạnh, lành mạnh",Eating vegetables keeps you healthy.,Ăn rau củ giúp bạn khỏe mạnh.
+health,exercise,n,A2,/ˈɛksərˌsaɪz/,sự tập thể dục,Regular exercise is important.,Tập thể dục đều đặn rất quan trọng.
+health,hospital,n,A1,/ˈhɑːspɪtəl/,bệnh viện,She works at a hospital.,Cô ấy làm việc ở một bệnh viện.
+health,sleep,v,A1,/sliːp/,ngủ,I sleep eight hours every night.,Tôi ngủ tám tiếng mỗi đêm.
+health,injury,n,B1,/ˈɪndʒəri/,chấn thương,He missed the match because of an injury.,Anh ấy bỏ lỡ trận đấu vì chấn thương.
+health,symptom,n,B1,/ˈsɪmptəm/,triệu chứng,A cough is a common symptom of a cold.,Ho là một triệu chứng phổ biến của cảm lạnh.
+education,student,n,A1,/ˈstuːdənt/,"học sinh, sinh viên",She is a university student.,Cô ấy là sinh viên đại học.
+education,teacher,n,A1,/ˈtiːtʃər/,giáo viên,Our teacher is very kind.,Giáo viên của chúng tôi rất tốt bụng.
+education,homework,n,A1,/ˈhoʊmˌwɜːrk/,bài tập về nhà,I finished my homework early.,Tôi đã làm xong bài tập về nhà sớm.
+education,exam,n,A2,/ɪɡˈzæm/,kỳ thi,The exam starts at nine.,Kỳ thi bắt đầu lúc chín giờ.
+education,subject,n,A2,/ˈsʌbdʒɪkt/,môn học,Math is my favorite subject.,Toán là môn học yêu thích của tôi.
+education,lecture,n,B1,/ˈlɛktʃər/,bài giảng,The lecture was very interesting.,Bài giảng rất thú vị.
+education,degree,n,B1,/dɪˈɡriː/,"bằng cấp, học vị",He has a degree in engineering.,Anh ấy có bằng đại học ngành kỹ thuật.
+education,library,n,A2,/ˈlaɪˌbrɛri/,thư viện,We study in the library.,Chúng tôi học trong thư viện.
+education,vocabulary,n,B1,/voʊˈkæbjəˌlɛri/,vốn từ vựng,Reading helps you build vocabulary.,Đọc sách giúp bạn xây dựng vốn từ vựng.
+education,grade,n,A2,/ɡreɪd/,điểm số; lớp,She got a good grade in English.,Cô ấy đạt điểm cao môn tiếng Anh.
+nature,tree,n,A1,/triː/,cây,There is a big tree in the yard.,Có một cái cây lớn trong sân.
+nature,river,n,A1,/ˈrɪvər/,dòng sông,The river is very wide here.,Con sông ở đây rất rộng.
+nature,mountain,n,A1,/ˈmaʊntən/,núi,We climbed the mountain on Sunday.,Chúng tôi đã leo núi vào Chủ nhật.
+nature,weather,n,A1,/ˈwɛðər/,thời tiết,The weather is nice today.,Hôm nay thời tiết đẹp.
+nature,forest,n,A2,/ˈfɔːrɪst/,khu rừng,Many animals live in the forest.,Nhiều loài động vật sống trong rừng.
+nature,rain,n,A1,/reɪn/,mưa,I don't like walking in the rain.,Tôi không thích đi bộ dưới mưa.
+nature,beach,n,A1,/biːtʃ/,bãi biển,We play volleyball on the beach.,Chúng tôi chơi bóng chuyền trên bãi biển.
+nature,environment,n,B1,/ɪnˈvaɪrənmənt/,môi trường,We must protect the environment.,Chúng ta phải bảo vệ môi trường.
+nature,flood,n,B1,/flʌd/,trận lũ,The flood damaged many houses.,Trận lũ đã làm hư hại nhiều ngôi nhà.
+nature,season,n,A2,/ˈsiːzən/,mùa,Summer is my favorite season.,Mùa hè là mùa yêu thích của tôi.
+sports,soccer,n,A1,/ˈsɑːkər/,bóng đá,They play soccer after school.,Họ chơi bóng đá sau giờ học.
+sports,basketball,n,A1,/ˈbæskɪtˌbɔːl/,bóng rổ,He plays basketball every weekend.,Anh ấy chơi bóng rổ mỗi cuối tuần.
+sports,swimming,n,A1,/ˈswɪmɪŋ/,môn bơi lội,Swimming is good exercise.,Bơi lội là một hình thức tập luyện tốt.
+sports,team,n,A2,/tiːm/,"đội, nhóm",Our team won the game.,Đội của chúng tôi đã thắng trận đấu.
+sports,match,n,A2,/mætʃ/,trận đấu,The match starts at eight.,Trận đấu bắt đầu lúc tám giờ.
+sports,player,n,A2,/ˈpleɪər/,"người chơi, cầu thủ",He is a famous player.,Anh ấy là một cầu thủ nổi tiếng.
+sports,coach,n,B1,/koʊtʃ/,huấn luyện viên,The coach gave us some advice.,Huấn luyện viên đã cho chúng tôi vài lời khuyên.
+sports,champion,n,B1,/ˈtʃæmpiən/,nhà vô địch,She became the national champion.,Cô ấy trở thành nhà vô địch quốc gia.
+sports,race,n,B1,/reɪs/,cuộc đua,He won the race easily.,Anh ấy thắng cuộc đua một cách dễ dàng.
+sports,train,v,A2,/treɪn/,"luyện tập, huấn luyện",We train three times a week.,Chúng tôi luyện tập ba lần một tuần.
+shopping,price,n,A1,/praɪs/,giá cả,What is the price of this shirt?,Giá của chiếc áo này là bao nhiêu?
+shopping,cheap,adj,A1,/tʃiːp/,rẻ,These shoes are cheap.,Đôi giày này rẻ.
+shopping,expensive,adj,A2,/ɪkˈspɛnsɪv/,đắt,That bag is too expensive.,Chiếc túi đó quá đắt.
+shopping,discount,n,B1,/ˈdɪsˌkaʊnt/,sự giảm giá,There is a twenty percent discount today.,Hôm nay có giảm giá hai mươi phần trăm.
+shopping,receipt,n,B1,/rɪˈsiːt/,hóa đơn,Keep the receipt in case you need to return it.,Hãy giữ hóa đơn phòng khi bạn cần trả hàng.
+shopping,cash,n,A2,/kæʃ/,tiền mặt,Do you pay by cash or card?,Bạn trả bằng tiền mặt hay thẻ?
+shopping,store,n,A1,/stɔːr/,cửa hàng,The store opens at nine.,Cửa hàng mở cửa lúc chín giờ.
+shopping,size,n,A2,/saɪz/,kích cỡ,Do you have this in a larger size?,Bạn có cái này cỡ lớn hơn không?
+shopping,fit,v,B1,/fɪt/,vừa (kích cỡ),These pants don't fit me.,Chiếc quần này không vừa với tôi.
+shopping,bargain,n,B1,/ˈbɑːrɡɪn/,món hời,This jacket was a real bargain.,Chiếc áo khoác này đúng là một món hời.

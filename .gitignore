@@ -7,7 +7,6 @@ vocaboost_app/build/
 vocaboost_app/.flutter-plugins
 vocaboost_app/.flutter-plugins-dependencies
 vocaboost_app/.packages
-vocaboost_app/pubspec.lock
 
 # ── Android ─────────────────────────────────
 vocaboost_app/android/.gradle/
@@ -27,12 +26,31 @@ vocaboost_app/ios/GoogleService-Info.plist
 google-services.json
 GoogleService-Info.plist
 firebase_options.dart
+.env.*
+tools/secrets/
+**/serviceAccountKey*.json
+**/*firebase-adminsdk*.json
+*.jks
+*.keystore
+*.log
+.firebase/
+
+# ── Cline (cấu hình cục bộ, không đẩy lên git) ──
+.clinerules/
+.clineignore
 
 # ── IDE ─────────────────────────────────────
 .idea/
 .vscode/settings.json
 *.iml
 
+# ── Python (tools/seed) ─────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
 # ── OS ──────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
